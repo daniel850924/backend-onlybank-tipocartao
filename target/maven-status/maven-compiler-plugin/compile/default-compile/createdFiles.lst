@@ -1,0 +1,6 @@
+br/unibh/sdm/backend_onlybank/Application.class
+br/unibh/sdm/backend_onlybank/negocio/TipoCartaoService.class
+br/unibh/sdm/backend_onlybank/rest/TipoCartaoController.class
+br/unibh/sdm/backend_onlybank/SwaggerConfiguration.class
+br/unibh/sdm/backend_onlybank/entidades/TipoCartao.class
+br/unibh/sdm/backend_onlybank/persistencia/TipoCartaoRepository.class

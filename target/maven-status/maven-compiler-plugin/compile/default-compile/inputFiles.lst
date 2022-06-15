@@ -1,0 +1,6 @@
+/Users/FABNW1H/Documents/Daniel/unibh/SDpratica/MicroServicos/backend-onlybank-tipocartao/src/main/java/br/unibh/sdm/backend_onlybank/SwaggerConfiguration.java
+/Users/FABNW1H/Documents/Daniel/unibh/SDpratica/MicroServicos/backend-onlybank-tipocartao/src/main/java/br/unibh/sdm/backend_onlybank/entidades/TipoCartao.java
+/Users/FABNW1H/Documents/Daniel/unibh/SDpratica/MicroServicos/backend-onlybank-tipocartao/src/main/java/br/unibh/sdm/backend_onlybank/rest/TipoCartaoController.java
+/Users/FABNW1H/Documents/Daniel/unibh/SDpratica/MicroServicos/backend-onlybank-tipocartao/src/main/java/br/unibh/sdm/backend_onlybank/Application.java
+/Users/FABNW1H/Documents/Daniel/unibh/SDpratica/MicroServicos/backend-onlybank-tipocartao/src/main/java/br/unibh/sdm/backend_onlybank/persistencia/TipoCartaoRepository.java
+/Users/FABNW1H/Documents/Daniel/unibh/SDpratica/MicroServicos/backend-onlybank-tipocartao/src/main/java/br/unibh/sdm/backend_onlybank/negocio/TipoCartaoService.java
