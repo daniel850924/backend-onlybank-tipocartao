@@ -51,7 +51,7 @@ public class TipoCartaoController {
     }
     
     @PutMapping(value = "{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public TipoCartao updateTipoCartao(@PathVariable String id,
+    public TipoCartao updateTipoCartao(@PathVariable Long id,
                                   @RequestBody @NotNull TipoCartao tipoCartao) throws Exception {
     	if (!id.equals(tipoCartao.getId())) {
     		throw new Exception("Codigo "+id+" nao está correto");
@@ -64,7 +64,7 @@ public class TipoCartaoController {
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping(value = "{id}")
-    public boolean updateTipoCartao(@PathVariable Long id) throws Exception {
+    public boolean deleteTipoCartao(@PathVariable Long id) throws Exception {
     	if (!tipoCartaoService.isTipoCartaoExists(id)) {
     		throw new Exception("TipoCartao com codigo "+id+" não existe");
     	} 

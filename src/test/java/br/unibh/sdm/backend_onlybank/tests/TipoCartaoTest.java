@@ -46,7 +46,22 @@ public class TipoCartaoTest {
 		for (TipoCartao conta : lista) {
 			LOGGER.info(conta.toString());
 		}
-}
+	}
+
+	@Test
+	public void testeUpdate() throws ParseException {
+		LOGGER.info("Update objetos...");
+		List<TipoCartao> lista = repository.findByBandeira("JUnit");
+		for (TipoCartao tipoCartao : lista) {
+
+			LOGGER.info("Update Tipo Cartao id = "+ tipoCartao.getId());
+			tipoCartao.setModalidade("prata");
+			repository.save(tipoCartao);
+		}
+		lista = repository.findByBandeira("JUnit");
+		assertEquals(lista.size(), 0);
+		LOGGER.info("Exclusão feita com sucesso");
+	}
 	
 	@Test
 	public void teste2Exclusao() throws ParseException {
@@ -54,7 +69,7 @@ public class TipoCartaoTest {
 		List<TipoCartao> lista = repository.findByBandeira("JUnit");
 		for (TipoCartao tipoCartao : lista) {
 
-			LOGGER.info("Excluindo Cliente id = "+ tipoCartao.getId());
+			LOGGER.info("Excluindo Tipo Cartao id = "+ tipoCartao.getId());
 			repository.delete(tipoCartao);
 		}
 		lista = repository.findByBandeira("JUnit");
